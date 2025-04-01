@@ -7,3 +7,7 @@ export function multiply(a: number, b: number): number {
 export function add(a: number, b: number): number {
   return Quack.add(a, b);
 }
+
+export function subtract(a: number, b: number): number {
+  return Quack.subtract(a, b);
+}

@@ -21,6 +21,14 @@ class QuackModule(reactContext: ReactApplicationContext) :
     return a + b
   }
 
+  override fun subtract(a: Double, b: Double): Double {
+    return a - b
+  }
+
+  // private external fun nativeMultiply(a: Double, b: Double): Double
+  // private external fun nativeAdd(a: Double, b: Double): Double
+  // private external fun nativeSubtract(a: Double, b: Double): Double
+
   companion object {
     const val NAME = "Quack"
   }
