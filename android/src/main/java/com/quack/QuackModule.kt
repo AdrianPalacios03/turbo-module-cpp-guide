@@ -11,25 +11,32 @@ class QuackModule(reactContext: ReactApplicationContext) :
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
   override fun multiply(a: Double, b: Double): Double {
-    return a * b
+    return nativeMultiply(a, b)
   }
 
   override fun add(a: Double, b: Double): Double {
-    return a + b
+    return nativeAdd(a, b)
   }
 
   override fun subtract(a: Double, b: Double): Double {
-    return a - b
+    return nativeSubtract(a, b)
   }
 
-  // private external fun nativeMultiply(a: Double, b: Double): Double
-  // private external fun nativeAdd(a: Double, b: Double): Double
-  // private external fun nativeSubtract(a: Double, b: Double): Double
+  override fun divide(a: Double, b: Double): Double {
+    return nativeDivide(a, b)
+  }
 
+  private external fun nativeMultiply(a: Double, b: Double): Double
+  private external fun nativeAdd(a: Double, b: Double): Double
+  private external fun nativeSubtract(a: Double, b: Double): Double
+  private external fun nativeDivide(a: Double, b: Double): Double
   companion object {
     const val NAME = "Quack"
+
+    // This loads the native library when the class is loaded
+    init {
+      System.loadLibrary("react-native-quack")
+    }
   }
 }

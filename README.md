@@ -14,7 +14,7 @@ That is for basic setup.
 
 # How to add more functions
 
-See the example of the second commit of this repo "Added adding function".
+Check the fourth commit of this repo. It has an example of how using C++ in React Native without writing any native code, including Kotlin code wich at first glance it looks like it should be written in Kotlin.
 
 
 1. bundle exec install

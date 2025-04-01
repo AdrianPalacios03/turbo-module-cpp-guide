@@ -18,3 +18,9 @@ JNIEXPORT jdouble JNICALL
 Java_com_quack_QuackModule_nativeSubtract(JNIEnv *env, jclass type, jdouble a, jdouble b) {
     return quack::subtract(a, b);
 }
+
+extern "C"
+JNIEXPORT jdouble JNICALL
+Java_com_quack_QuackModule_nativeDivide(JNIEnv *env, jclass type, jdouble a, jdouble b) {
+    return quack::divide(a, b);
+}

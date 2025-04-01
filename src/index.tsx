@@ -11,3 +11,7 @@ export function add(a: number, b: number): number {
 export function subtract(a: number, b: number): number {
   return Quack.subtract(a, b);
 }
+
+export function divide(a: number, b: number): number {
+  return Quack.divide(a, b);
+}

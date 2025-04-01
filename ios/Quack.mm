@@ -21,6 +21,12 @@ RCT_EXPORT_MODULE()
     return result;
 }
 
+- (NSNumber *)divide:(double)a b:(double)b {
+    NSNumber *result = @(quack::divide(a, b));
+
+    return result;
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
