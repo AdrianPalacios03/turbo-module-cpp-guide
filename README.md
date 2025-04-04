@@ -9,6 +9,7 @@
 8. yarn ios
 9. Modify applicationId in example/android/app/build.gradle to com.<package-name>
 10. yarn android
+11. Change main and exports[.].default to ./src/index.tsx (or module entry point)
 
 That is for basic setup.
 
@@ -23,7 +24,7 @@ Check the fourth commit of this repo. It has an example of how using C++ in Reac
 ## Installation
 
 ```sh
-npm install react-native-quack
+yarn add github:AdrianPalacios03/turbo-module-cpp-guide#main;  
 ```
 
 ## Usage
